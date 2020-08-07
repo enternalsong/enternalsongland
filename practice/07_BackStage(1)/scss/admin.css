@@ -1,0 +1,319 @@
+.w-big {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.w-sec {
+  font-weight: 500;
+}
+
+.w-transparent {
+  color: #0000009a;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.font-family-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.sidebar {
+  width: 296px;
+  min-height: 100vh;
+  background-color: #EDF4EE;
+  margin-right: 32px;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .title {
+  width: 40px;
+  padding-top: 32px;
+  margin-bottom: 29px;
+  margin-left: 32px;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar .navbar-menu {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.sidebar .nav-link {
+  border-left: 4px solid #EDF4EE;
+  padding-left: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sidebar .nav-link:hover {
+  border-left: 4px solid #2A8356;
+  color: #2A8356;
+}
+
+.sidebar .account-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 16px;
+  background-image: url("../assets/images/andychen.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.account-box {
+  width: 294px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.account-box .account-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+
+.account-box .account-mail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #0000009A;
+  opacity: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+/*container of comment*/
+.content-right {
+  min-height: 650px;
+  margin-right: 32px;
+}
+
+.content-right .navbar {
+  padding: 0px;
+  padding-top: 32px;
+  padding-bottom: 44px;
+}
+
+.content-right .navbar-brand {
+  margin-right: 34px;
+}
+
+.content-right .navbar-right {
+  margin: 0px;
+}
+
+.content-right .dropdown-toggle::after {
+  color: #2A8356;
+}
+
+.content-right .nav-link {
+  padding: 0px;
+  margin-left: 26px;
+}
+
+.content-right ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.admin-table {
+  margin-bottom: 67px;
+}
+
+.admin-list {
+  font-family: 'Lato', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.1rem solid #CDDDCD;
+  font-size: 16px;
+  line-height: 24px;
+  height: 55px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.admin-list .admin-list-left {
+  width: 80%;
+}
+
+.admin-list .admin-list-last {
+  width: 20%;
+}
+
+.admin-list .id {
+  font-weight: bold;
+  max-width: 94px;
+  width: 94px;
+  padding-right: 20px;
+}
+
+.admin-list .admin-list-inside {
+  width: 559px;
+}
+
+.admin-list .name {
+  width: 45%;
+  max-width: 234px;
+}
+
+.admin-list .email {
+  width: 55%;
+  max-width: 325px;
+}
+
+.admin-list .arrow {
+  width: 12px;
+  height: 12px;
+}
+
+.admin-list .vertified {
+  width: 80%;
+}
+
+.admin-list .modal-button {
+  padding-bottom: 0;
+}
+
+.admin-list:hover {
+  background-color: #CDDDCD;
+}
+
+.admin-list-first {
+  font-weight: bold;
+  cursor: context-menu;
+  border-bottom: 0.1rem solid #121212;
+}
+
+.modal .readModal-body {
+  padding: 32px;
+}
+
+.modal .photo-user {
+  width: 141px;
+  height: 141px;
+}
+
+.modal .id {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal .name {
+  font-size: 24px;
+  line-height: 28px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.modal .auth {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+.modal .email {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.modal .button {
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #CDDDCD;
+}
+
+.editadmin .modal-header {
+  padding: 32px;
+  border-bottom: 0px;
+}
+
+.editadmin .modal-title {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.editadmin .form-title {
+  font-size: 20px;
+  line-height: 33px;
+  border-bottom: 1px solid #CDDDCD;
+}
+
+.editadmin .form-title:last-of-type {
+  border-bottom: 0px;
+}
+
+.editadmin .modal-body {
+  padding: 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.editadmin .form-label-text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.editadmin .form-input {
+  background-color: #CDDDCD;
+}
+
+.editadmin .form-group {
+  margin-bottom: 0;
+}
+
+.editadmin .btn-large {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.editadmin .btn-large:hover {
+  color: black;
+}
+
+.editadmin .btn-vertify {
+  border: 1px solid #CDDDCD;
+  color: #CDDDCD;
+}
+
+.editadmin .btn-decativate {
+  border: 1px solid #E3006E;
+  color: #E3006E;
+}
+
+.editadmin .btn-modal-footer {
+  color: #2A8356;
+  border: 1px solid #CDDDCD;
+}
+
+.editadmin .btn-modal-footer:hover {
+  background-color: #2A8356;
+  color: white;
+}
+/*# sourceMappingURL=admin.css.map */

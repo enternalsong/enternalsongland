@@ -1,0 +1,143 @@
+.subscribe-wall {
+  background-image: url("../images/footer.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .subscribe-wall .form-control {
+    border-radius: 0px; }
+  .subscribe-wall .input-email {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 1rem;
+    padding-right: 6.5rem;
+    background-color: transparent;
+    border: 1px solid #ffffff99; }
+  .subscribe-wall .btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0px; }
+
+.footer .navbar-brand {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 16px;
+  margin: 0px; }
+
+.footer .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: #FFFFFFDE; }
+
+.footer .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #0E8A00; }
+
+.header {
+  height: 800px; }
+  .header .logo-text {
+    font-family: "Raleway", sans-serif; }
+  .header .logo-text:hover {
+    color: #0E8A00; }
+  .header .solgan-text {
+    font-family: "Roboto", sans-serif; }
+  .header .nav-link:hover {
+    color: #0E8A00; }
+
+.text-nav {
+  color: white; }
+
+.text-main {
+  color: #0E8A00; }
+
+.header-img {
+  position: absolute;
+  float: left; }
+
+/*padding */
+.logo-text {
+  font-family: "Raleway", sans-serif; }
+
+.logo-text:hover {
+  color: #0E8A00; }
+
+.p-85 {
+  padding-left: 85px;
+  padding-right: 85px; }
+
+.pt-84 {
+  padding-top: 84px; }
+
+.p-16 {
+  padding: 16px; }
+
+.p-2rem {
+  padding: 2rem; }
+
+.pb-4 {
+  padding-bottom: 4px; }
+
+.pb-4dot5rem {
+  padding-bottom: 4.5rem; }
+
+.pb-16 {
+  padding-bottom: 16px; }
+
+.pl-1dot5rem {
+  padding-left: 1.5rem; }
+
+/*1rem =16px*/
+.fz-2rem {
+  font-size: 2rem; }
+
+.fz-3rem {
+  font-size: 3rem; }
+
+.pl-7dot7rem {
+  padding-left: 7.7rem; }
+
+/* font-size: 24px;*/
+.fz-1dot5rem {
+  font-size: 1.5rem; }
+
+.fz-1rem {
+  font-size: 1rem; }
+
+/*margin */
+.mb-auto {
+  margin-bottom: auto; }
+
+.mb-5rem {
+  margin-bottom: 5rem; }
+
+.mb-2rem {
+  margin-bottom: 2rem; }
+
+.mb-3rem {
+  margin-bottom: 3rem; }
+
+.ml-85 {
+  margin-left: 85px; }
+
+/*css style*/
+.mr-157 {
+  margin-right: 157px; }
+
+.text-nav {
+  color: black; }
+
+.text-wh {
+  color: white; }
+
+.text-grey {
+  color: #ffffff99; }
+
+.text-main {
+  color: #0E8A00; }
+
+.text-black {
+  color: black; }
+
+.bg-black {
+  background-color: black; }
+
+/*# sourceMappingURL=all.css.map */

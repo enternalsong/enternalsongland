@@ -1,0 +1,27 @@
+<!DOCtype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<src link="stylesheet" href="binary_gap.css">
+		<title>java-script-practice02 Decimal_to)_ </title>
+	</head>
+	<body>
+		
+		<h1>十位元轉二位元與binary gap判定</h1>
+	
+		<h4>何謂binary gap?</h4>
+		<h4>&nbsp&nbsp&nbsp&nbsp例如十位數8，二位元則為1000，沒有binary gap</h4>
+		<h4> &nbsp&nbsp&nbsp&nbsp而十位數9,二位元為1001，則有長度為2的binary gap</h4>
+		<div > 十位元數字:<input type="number" id="Decimal" min="0"> </div>
+		
+		
+		<input type="submit" value="計算" onclick="toBinary()">
+		<hr>
+		<p id="result1">二位元:</p>
+		<p id="result2">是否有binary gap:</p>
+	
+		<p id="result3">binary gap中最串幾個零連在一起(無binary gap為零)</p>
+
+		<script src="binary.js"> </script>
+	</body>
+</html>

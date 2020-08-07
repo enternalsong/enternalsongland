@@ -1,0 +1,283 @@
+.w-big{
+    font-size:16px;
+    font-weight: bold;
+}
+.w-sec{
+    font-weight: 500;
+}
+.w-transparent{
+    color: #0000009a;
+    font-weight: normal;
+    opacity: 1;
+}
+
+p{
+    margin-bottom: 0px;
+}
+.font-family-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.sidebar{
+    width: 296px;
+    background-color:#EDF4EE;
+    margin-right: 32px;
+    height: auto;
+    justify-content: space-between;
+
+    .title{
+        width: 40px;
+        padding-top: 32px;
+        margin-bottom: 29px;
+        margin-left:32px;
+    }
+    a{
+        color: black;
+    }
+    .navbar-menu{
+        width: 100%;
+        margin-bottom: auto;
+    }
+    .nav-link{
+        border-left:4px solid #EDF4EE;
+        padding-left: 32px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .nav-link:hover{
+        border-left:4px solid #2A8356;
+        color: #2A8356;
+    }
+
+    .account-pic{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-right: 16px;
+        background-image: url("../assets/images/andychen.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+}
+.account-box{
+    width: 294px;
+    height: auto;
+    margin-bottom: 32px;
+
+    .account-name{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Lato', sans-serif;
+
+    }
+    .account-mail{
+        font-size: 14px;
+        line-height: 24px;
+        color: #0000009A;
+        opacity: 1;
+        font-family: 'Lato', sans-serif;
+    }
+}
+/*container of comment*/
+.inner-box{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.content-right{
+    min-height: 650px;
+    margin-right: 32px;
+    .navbar{
+        padding:0px;
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+    .navbar-brand {
+        margin-right: 34px;
+        
+    }
+    .navbar-right{
+        margin: 0px;
+    }
+
+    .dropdown-toggle::after {
+        color: #2A8356;
+    }
+
+    .nav-link{
+        padding:0px;
+        margin-left: 26px;
+    }
+    ul{ 
+        padding: 0px;
+        list-style: none;
+    }
+    .assignment-box{
+
+        border: 1px solid #edf4ee;
+        padding: 12px;
+        width: 405px;  
+    }
+
+
+    .list-assignment{
+        margin-right: 16px;
+        
+        height: auto;
+        
+
+    }
+    .assignment{
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .allbar{
+        width: 100%;
+        margin-bottom: 6px;
+        .title{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 7px;
+        }
+    
+        .arrow{
+            width:12px;
+            height:12px;
+        }
+    
+    }
+
+}
+.comment-content{
+    width: 100%;
+
+    .card{
+        margin-bottom: 22px;
+
+        }
+    .card-body{
+        padding-left: 16px;
+        padding-right: 32px;
+    }
+    .card-issue {
+        width: 100%;
+    }
+    .card-issue-title{
+        font-size:12px;
+        line-height: 24px;
+
+    }
+    .card-issue-info{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .media{
+        margin-bottom: 16px;
+    }
+    .card-text{
+        margin-left: 56px;
+        font-size: 14px;
+        line-height: 21px;
+        .mb16{
+            margin-bottom: 16px;
+        }
+        .button-download{
+            color: black;
+            background-color: #EDF4EE;
+            padding: 8px 12px;
+            border: 0.1rem solid #CDDDCD;
+            width: 182px;
+            height: 48px;
+            text-decoration: none;
+            .button-download-text{
+
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0px;
+            }
+        }
+        .button-download:hover{
+            color: #2A8356;
+        }
+        .highlight{
+            color: #2A8356;
+            display: inline-block;
+            background-color: #edf4ee;
+            width: auto;
+        }
+        ul{
+            padding-left: 16px;
+        }
+        li{
+            font-style: 14px;
+            line-height: 21px;
+        }
+    }
+    .card-down{
+        margin-bottom: 16px;
+    }
+    .commenter-img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .commenter-name{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .commenter-time{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+.btn-normal{
+    color:#2A8356;
+    border:1px solid #CDDDCD;
+}
+.btn-normal:hover{
+    background-color: #2A8356;
+    color: white;
+}
+.replyGroup{
+    width: 0%;
+    height: 0px;
+    border: 0rem solid #CDDDCD;
+}
+.replyGroup .active{
+    border: 0rem solid #CDDDCD;
+    width: 100%;
+    display:inline-block;
+}
+@media(max-width: 1100px)
+{
+    .content-right{
+        .inner-box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        .list-assignment{
+            margin-right: 0px;
+            width:100%;
+            
+        }
+        .assignment-box{
+            width: 100%;
+            border: 1px solid #edf4ee;
+            padding: 12px; 
+        }
+    }
+
+
+}

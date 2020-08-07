@@ -1,0 +1,321 @@
+.w-big {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.w-sec {
+  font-weight: 500;
+}
+
+.w-transparent {
+  color: #0000009a;
+  font-weight: normal;
+  opacity: 1;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.font-family-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.sidebar {
+  width: 296px;
+  background-color: #EDF4EE;
+  margin-right: 32px;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .title {
+  width: 40px;
+  padding-top: 32px;
+  margin-bottom: 29px;
+  margin-left: 32px;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar .navbar-menu {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.sidebar .nav-link {
+  border-left: 4px solid #EDF4EE;
+  padding-left: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sidebar .nav-link:hover {
+  border-left: 4px solid #2A8356;
+  color: #2A8356;
+}
+
+.sidebar .account-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 16px;
+  background-image: url("../assets/images/andychen.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.account-box {
+  width: 294px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.account-box .account-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+
+.account-box .account-mail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #0000009A;
+  opacity: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+/*container of comment*/
+.inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.content-right {
+  min-height: 650px;
+  margin-right: 32px;
+}
+
+.content-right .navbar {
+  padding: 0px;
+  padding-top: 32px;
+  padding-bottom: 44px;
+}
+
+.content-right .navbar-brand {
+  margin-right: 34px;
+}
+
+.content-right .navbar-right {
+  margin: 0px;
+}
+
+.content-right .dropdown-toggle::after {
+  color: #2A8356;
+}
+
+.content-right .nav-link {
+  padding: 0px;
+  margin-left: 26px;
+}
+
+.content-right ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.content-right .assignment-box {
+  border: 1px solid #edf4ee;
+  padding: 12px;
+  width: 405px;
+}
+
+.content-right .list-assignment {
+  margin-right: 16px;
+  height: auto;
+}
+
+.content-right .assignment {
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.content-right .allbar {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.content-right .allbar .title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 7px;
+}
+
+.content-right .allbar .arrow {
+  width: 12px;
+  height: 12px;
+}
+
+.comment-content {
+  width: 100%;
+}
+
+.comment-content .card {
+  margin-bottom: 22px;
+}
+
+.comment-content .card-body {
+  padding-left: 16px;
+  padding-right: 32px;
+}
+
+.comment-content .card-issue {
+  width: 100%;
+}
+
+.comment-content .card-issue-title {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.comment-content .card-issue-info {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.comment-content .media {
+  margin-bottom: 16px;
+}
+
+.comment-content .card-text {
+  margin-left: 56px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.comment-content .card-text .mb16 {
+  margin-bottom: 16px;
+}
+
+.comment-content .card-text .button-download {
+  color: black;
+  background-color: #EDF4EE;
+  padding: 8px 12px;
+  border: 0.1rem solid #CDDDCD;
+  width: 182px;
+  height: 48px;
+  text-decoration: none;
+}
+
+.comment-content .card-text .button-download .button-download-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.comment-content .card-text .button-download:hover {
+  color: #2A8356;
+}
+
+.comment-content .card-text .highlight {
+  color: #2A8356;
+  display: inline-block;
+  background-color: #edf4ee;
+  width: auto;
+}
+
+.comment-content .card-text ul {
+  padding-left: 16px;
+}
+
+.comment-content .card-text li {
+  font-style: 14px;
+  line-height: 21px;
+}
+
+.comment-content .card-down {
+  margin-bottom: 16px;
+}
+
+.comment-content .commenter-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comment-content .commenter-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.comment-content .commenter-time {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.btn-normal {
+  color: #2A8356;
+  border: 1px solid #CDDDCD;
+}
+
+.btn-normal:hover {
+  background-color: #2A8356;
+  color: white;
+}
+
+.replyGroup {
+  width: 0%;
+  height: 0px;
+  border: 0rem solid #CDDDCD;
+}
+
+.replyGroup .active {
+  border: 0rem solid #CDDDCD;
+  width: 100%;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  .content-right .inner-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content-right .list-assignment {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .content-right .assignment-box {
+    width: 100%;
+    border: 1px solid #edf4ee;
+    padding: 12px;
+  }
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,251 @@
+.title{
+   text-align:center;
+   
+  font-family: 'Slabo 27px',serif;
+  
+}
+.nav h1{
+  font-size:20px;
+  text-align:center;
+}
+.nav{
+  background-color:#888;
+  height:40px;
+  
+}
+.nav .main{
+  height:25px;
+  width:30%;
+  
+  float:left;
+ 
+  vertical-align:middle;
+}
+.nav .menu{
+  height:25px;
+  float:left;
+}
+
+.nav ul{
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  
+}
+.nav li{
+  display:inline-block;
+  padding:12px;
+  
+}
+.nav li a{
+  color:black;
+  font-weight:300;
+  text-decoration:none;
+  font-size:1.1em;
+  width:18px;
+  height:18px;
+  text-align:center;
+  
+}
+
+.title{
+	padding:15px;
+	text-align:center;
+	background-color:white;
+	font-size:50px;
+}
+.direct{
+	
+	font-size:25px;
+	text-align:left;
+	
+}
+.group{
+	padding:15px;
+	
+}
+.title h5{
+	font-size:18px;
+	text-align:left;
+}
+
+
+.leftdiv img {
+	width:300px;
+	height:300px;
+	
+	
+}
+.leftdiv h1{
+	font-size:2em;
+	font-weight:200;
+	
+	
+	
+}
+.leftdiv h2{
+	font-size:1.5em;
+	font-weight:200;
+	
+}
+
+.information{
+	width:300px;
+	height:auto;
+
+	margin:40px;
+}
+.content{
+	width:300px;
+	height:auto;
+
+	margin:40px;
+
+}
+
+.about{
+	width:400px;
+	height:400px;
+	height:auto;
+
+	margin:40px;
+}
+.leftdiv{
+
+	margin:25px 10px;
+
+	
+}
+.rightdiv{
+
+	
+	margin:25px 10px 25px 25px;
+	height:800px;
+}
+.rightdiv h3{
+	font-size:0.8em;
+	
+	
+}
+.rightdiv img
+{
+	width:1.5em;
+	height:auto;
+	
+	
+	
+}
+.rightdiv li i
+{
+	font-size:1.5em;
+	
+	
+}
+
+.bg{
+		
+	height:700px;
+	background-color:white;
+	 display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	
+}
+.about ul{
+	  list-style:none;
+	 
+}
+.about li{
+	margin:20px  0px 20px 0px;
+}
+
+
+.aboutup{
+	
+		 display:flex;
+	  flex-direction:row;
+	  justify-content:space-between;
+	  align-items:center;
+	  margin:auto;
+	
+}
+
+
+.main a{
+	color:black;
+	text-decoration:none;
+}
+
+.page2{
+	 display:flex;
+	  flex-direction:row;
+	  justify-content:space-between;
+	
+	
+}
+
+.page2 div{
+	
+	margin:20px;
+	width:300px;
+	height:300px;
+}
+
+.page1 {
+	 display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	
+	
+}
+.page1 img{
+	width:300px;
+	height:300px;
+	margin:20px;
+	
+}
+
+.one-forty{
+
+	width:400px;
+	height:400px;
+	margin:30px;
+}
+
+
+
+
+
+
+.pic-one-forty{
+	display:flex;
+	 flex-direction:row;
+	  justify-content:space-between;
+	  align-items:center;
+
+		width:300px;
+	height:300px;
+}
+
+.pic-one-forty img{
+	width:150px;
+	height:150px;
+
+	margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

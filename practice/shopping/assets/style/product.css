@@ -1,0 +1,35 @@
+.bg-nav {
+  display: none; }
+
+.text-nav {
+  color: black; }
+
+.product-nav {
+  background-color: #F2F2F2; }
+  .product-nav .container {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+  .product-nav .nav-link {
+    padding-left: 0px;
+    font-size: 24px;
+    line-height: 28px; }
+
+.product-waterfall-wall .card {
+  border: 0px; }
+
+.product-waterfall-wall .card-size-s {
+  width: 350px;
+  height: 250px; }
+
+.product-waterfall-wall .card-size-m {
+  width: 350px;
+  height: 350px; }
+
+.product-waterfall-wall .card-size-l {
+  width: 350px;
+  height: 480px; }
+
+.product-waterfall-wall .card-body {
+  padding-left: 0; }
+
+/*# sourceMappingURL=product.css.map */

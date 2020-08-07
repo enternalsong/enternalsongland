@@ -1,0 +1,201 @@
+.classic{
+    padding-top:64px;
+    padding-bottom:80px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .classic h2{
+    font-size:48px;
+    line-height:72px;
+    text-align:center;
+    margin-bottom:60px;
+    color:#650300;
+  }
+  .classic-item{
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction:row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .classic-list{
+    margin:0 auto;
+  }
+
+  .classic-list .reverse{
+    display:flex;
+    flex-direction:row-reverse;
+  }
+  .mpic{
+      width:50%;
+  }
+  .cpic-box{
+  }
+  .picbox{
+    height:auto;
+    width:auto;
+}
+  .cpic{
+    width:auto;
+    padding-top:40.20%;
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+  }
+  .glasses{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png");
+  }
+  .sun{
+     background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png"); 
+  }
+  .sun:hover{
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png"); 
+  }
+  .thunder{
+     background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png");  
+  }
+  .cicon{
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    width:48px;
+    height:37px;  
+  }
+    .cicon1{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond.svg");
+    }
+    .cicon2{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg");
+    }
+    .cicon3{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg");
+  }
+  .classic .classic-text{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    font-size:48px;
+    line-height:72px;
+    color:#AA0601;
+    padding-left:12px;
+    padding-right:12px;
+  }
+  .classic-text .text{
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-content:center;
+  }
+  @media(max-width:992px){
+    .classic-list{
+      margin:0px;
+    }
+    .classic-list .reverse{
+    display:flex;
+    flex-direction:row;
+
+    }
+
+    .classic-item{
+        justify-content: flex-start;
+    }
+    .picbox{
+      width: 410.85px;
+      height: 168px;
+    }
+    .c-xl{
+        
+        margin-right:32px;
+    }
+    .classic .classic-text{
+    margin-left:65px;
+    margin-right:0px;
+    font-size:28px;
+    line-height:32px;
+    color:#AA0601;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .classic-list li{
+    margin-bottom:8px;
+    }
+  }
+  @media(max-width:767px){
+    .classic{
+    padding-top:24px;
+    padding-bottom:24px;
+    padding-left:0px;
+    width:100%;
+     display:block;
+
+    }
+    .cpic-box{
+      display:none;
+    }
+    .classic h2 {
+    font-size:24px;
+    line-height:48px;
+    text-align:center;
+    margin-bottom:16px;
+    } 
+    .reverse{
+      margin-bottom:24px;
+    }
+    .classic-m{
+      min-width:352px;
+      width:auto;
+      height:auto;
+      min-height:134px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction:row;
+      justify-content:center;
+      align-items:center;
+      margin-bottom:8px;
+    }
+    .c-xl{
+        display:none;
+    }
+    .picbox{
+        display:none;
+    }
+    .mpic1{
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png");
+    }
+    .mpic2{
+          background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png");
+    }
+    .mpic2:hover{
+            background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png");  
+    }
+    .mpic3{
+          background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png");
+    }
+      .classic .classic-text{
+    font-size:28px;
+    line-height:32px;
+    color:#FFFFFF;
+    display: flex;
+    font-display: row;
+    justify-content: center;
+    align-items: center;
+    margin-left:0px;
+    }
+   .cicon1{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond-white.svg");
+    }
+   .cicon2{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun-white.svg");
+    }
+   .cicon3{ 
+      content:url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder-white.svg");
+    } 
+  }

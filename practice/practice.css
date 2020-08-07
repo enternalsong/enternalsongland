@@ -1,0 +1,138 @@
+body{
+	background: -webkit-linear-gradient(left top,#68B5F0,#FF862C);
+	background: -o-linear-gradient(bottom right,#68B5F0,#FF862C);
+	background: -moz-linear-gradient(bottom right,#68B5F0,#FF862C);
+	background: linear-gradient(bottom right,#68B5F0 ,#FF862C);
+}
+.title{
+   text-align:center;
+   
+  font-family: 'Slabo 27px',serif;
+  
+}
+.nav h1{
+  font-size:20px;
+  text-align:center;
+}
+.nav{
+  background-color:#888;
+  height:40px;
+  
+}
+.nav .main{
+  height:25px;
+  width:30%;
+  
+  float:left;
+ 
+  vertical-align:middle;
+}
+.nav .menu{
+  height:25px;
+  flow:left;
+}
+
+.nav ul{
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  
+}
+.nav li{
+  display:inline-block;
+  padding:12px;
+  
+}
+li a{
+  color:black;
+  font-weight:300;
+  text-decoration:none;
+  font-size:1.1em;
+  width:18px;
+  height:18px;
+  text-align:center;
+  
+}
+.title{
+	padding:15px;
+	text-align:center;
+	background-color:white;
+	font-size:50px;
+}
+.leftdiv img {
+	width:250px;
+	height:250px;
+	border-radius:125px;
+	
+}
+.leftdiv h1{
+	font-size:2em;
+	font-weight:200;
+	
+	
+	
+}
+.leftdiv h2{
+	font-size:1.5em;
+	font-weight:200;
+	
+}
+.content{
+	width:300px;
+	height:auto;
+
+	margin:40px;
+
+}
+.bg{
+		
+	height:700px;
+	background-color:white;
+	 display:flex;
+	  flex-direction:row;
+	  justify-content:center;
+	
+}
+
+
+
+
+.main a{
+	color:black;
+	text-decoration:none;
+}
+/*兩層控制垂直置中*/
+.top{
+	text-align:center;
+	line-height:200px;
+	margin:auto;
+	border:1px solid #f00;
+	width:500px;
+	padding:1px;
+}
+
+.top .content{
+	display:inline-block;
+	height:auto;
+	vertical-align:middle;
+	line-height:2px;
+	width:400px;
+	font-size:50px;
+}
+table{
+	
+	/*table垂直置中;*/
+	margin-left:auto;
+	margin-right:auto;
+	/*line-height control*/
+	line-height:2px;
+	border-width:3px;
+	border-style:dashed;
+	border-color:#FFAC55;
+}
+td{
+	font-size:20px;
+	text-align:center;
+}

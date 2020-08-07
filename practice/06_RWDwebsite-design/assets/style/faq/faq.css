@@ -1,0 +1,101 @@
+.faqbg {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/qa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 304px;
+  margin-bottom: 88px; }
+  .faqbg .container {
+    max-width: 1200px;
+    height: 304px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .faqbg .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    font-size: 64px;
+    line-height: 80px; }
+  .faqbg .icon-help {
+    width: auto;
+    height: auto;
+    margin-left: 10px; }
+
+.faqinner {
+  margin: 0 auto;
+  max-width: 1200px; }
+  .faqinner .inner-title {
+    font-size: 32px;
+    line-height: 64px;
+    text-align: left; }
+
+.faqbox {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-bottom: 156px;
+  width: auto; }
+
+.faqrow .up {
+  display: none; }
+
+.active .up {
+  display: block; }
+
+.active .down {
+  display: none; }
+
+.qbox {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid black;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.abox {
+  border-top: 1px solid black;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: 2px;
+  line-height: 24px; }
+
+.inactive {
+  display: none; }
+
+.arrow {
+  width: 15px;
+  height: 24px; }
+
+@media (max-width: 972px) {
+  .container {
+    margin: 0px; } }
+
+/*# sourceMappingURL=faq.css.map */

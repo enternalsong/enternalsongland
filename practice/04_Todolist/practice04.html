@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    </head>
+    <body>
+      <div class="navx" >
+        <div class="main">
+          <a href="../index.html"><h1>Kevin-Chiang</h1></a>
+        </div>
+        <ul>
+          <div class="menu">
+            <li class="nav-item"><a href="../../home/home.html ">Home</a> </li>
+            <li class="nav-item"><a href="../../me/me.html ">關於我</a></li>
+            <li class="nav-item"><a href="../../project/project.html ">專題</a> </li>
+            <li class="nav-item"><a href="https://enternalsong.github.io/blog">文章</a></li>
+            <li class="nav-item"><a href="../../school/school.html">大學生活</a> </li>
+            <li class="nav-item"><a href="../practice.html">工具箱</a></li>
+          </div>
+        </ul>
+        </div>
+
+        <div class="box">
+          <img src="https://enternalsong.github.io/practice/04_Todolist/pics/todolist2.png" class="img-fluid"alt="Responsive image" >
+        </div>
+        <div id="app" class="container my-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">待辦事項</span>
+              </div>
+              <input type="text" class="form-control" placeholder="準備要做的任務(Enter輸入)" v-model="typing" @keyup.enter="addTodo">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" @click="addTodo">新增</button>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" :class="{'active':selectIt=='all' }" href="#" @click="selectIt='all'">全部</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#":class="{'active':selectIt=='active' }"@click="selectIt='active'" >進行中</a>
+                  </li>
+                  <li class="nav-item"  :class="{'active':selectIt=='completed' }" @click="selectIt='completed'">
+                    <a class="nav-link" href="#">已完成</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="list-group list-group-flush text-left"   >
+                <li class="list-group-item" v-for="(item,key) in filterTodos" @dblclick="editTodos(item)">
+                  <div class="d-flex" v-if="cachetodos.id != item.id">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input"   v-model="item.completed" @click="countedCompleted(item)" :id=item.id :key = item.id>
+                      <label class="form-check-label" for="a1" :class="{'completed':item.completed==true}" >
+                        {{item.text}}
+                      </label>
+                    </div>
+                    <button type="button" class="close ml-auto" aria-label="Close" @click="removeTodo(item)">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <input type="text" v-model="cachetext" @keyup.enter="doneEdit(item)" v-if="cachetodos.id === item.id" >
+                </li>
+                <!-- <li class="list-group-item">
+                  <div class="d-flex">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="a1">
+                      <label class="form-check-label completed" for="a1">
+                        Cras justo odio
+                      </label>
+                    </div>
+                    <button type="button" class="close ml-auto" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </li> -->
+                <!-- <li class="list-group-item">
+                  <input type="text" class="form-control">
+                </li> -->
+              </ul>
+              <div class="card-footer d-flex justify-content-between" @click="cancelEdit">
+                <span>還有 {{count}} 筆任務未完成</span>
+                <a href="#" @click="removeAll">清除所有任務</a>
+              </div>
+            </div>
+          </div>
+    </body>
+<script>
+var app=new Vue({
+  el:"#app",
+  data:{
+    message:'',
+    typing:'',
+    count:0,
+    selectIt:'all',
+    todos:[
+        // {
+        // text:"",
+        // id:"",
+        // },
+    ],
+    cachetodos:{},
+    cachetext:'',
+  },
+  methods:{
+    addTodo:function(){
+      var vm = this;
+      var val = this.typing.trim();
+      var timestamp = Math.floor(Date.now());
+      console.log("adding");
+      if(!val){
+        return;
+      }
+      this.todos.push({
+          text:val,
+          id:timestamp,
+          completed:false,
+      });
+      this.typing = "";
+      vm.count=vm.count+1;
+    },
+    removeTodo:function(input){
+    var rmindex="";
+    var vm=this;
+    vm.todos.forEach(function(item,key){
+      if(input.id == item.id)
+      {
+        rmindex = key;
+      }
+      
+    });
+    if(this.count !=0 && input.completed ==false)
+    {this.count=this.count-1;}
+    vm.todos.splice(rmindex,1);
+    },
+    removeAll:function(){
+      this.todos=[];
+      this.count=0;
+    },
+    countedCompleted:function(item){
+        console.log(item.completed);
+        if(item.completed==true)
+        {
+          this.count = this.count+1;
+        }
+        else{this.count = this.count-1;}
+      },
+    editTodos:function(item){
+      console.log("edit");
+      this.cachetodos=item;
+      this.cachetext=item.text;
+    },
+    doneEdit:function(item){
+        item.text=this.cachetext;
+        this.cachetext = '';
+        this.cachetodos = {};
+      },
+    cancelEdit:function(){
+      this.cachetext='';
+      this.cachetodos={};
+    },
+  },
+  computed:{
+    filterTodos:function(){
+      if (this.selectIt == 'all'){
+        return this.todos;
+      }
+      else if(this.selectIt == 'active'){
+        var newtodos=[];
+        newtodos=this.todos.filter(function(item){
+          if(item.completed == false){
+            return item;
+          }
+        });
+        console.log(newtodos);
+        return newtodos;
+      }
+      else if(this.selectIt == 'completed'){
+        var newtodos=[];
+        this.todos.forEach(function(item){
+          if(item.completed == true){
+            newtodos.push(item);
+          }
+        });
+        return newtodos;
+      }
+      return [];
+    },
+  },
+});
+</script>
+    <style>
+    .completed {
+    text-decoration: line-through
+    }
+    .box{
+      width:100%;
+      height:auto;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+    }
+    .navx {
+      background-color:darkgrey;
+    }
+    .navx h1{
+      font-size:20px;
+      text-align:center;
+
+    }
+    .navx .main{
+      width:100%;
+      height:auto
+    }
+    .navx .menu{
+      width:100%;
+      height:auto;
+      text-align:center;
+    }
+    .navx .menu ul{
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    }
+    .navx .menu li{
+    display:inline-block;
+    padding:12px;
+    }
+    </style>
+</html>

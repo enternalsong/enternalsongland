@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?     family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet"href="practice03.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="practice03.js"></script>
+	<!--Import Leaflet-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+	<!--Import Marker Cluster-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+
+
+	</head>
+
+	<body>
+	  <div class="nav" >
+      <div class="main">
+        <a href="../index.html"><h1>Kevin-Chiang</h1></a>
+        
+      </div>
+	  <ul>
+        <div class="menu">
+          <li class="l1"><a href="../../home/home.html ">Home</a> </li>
+          <li class="l2"><a href="../../me/me.html ">關於我</a></li>
+          <li class="l3"><a href="../project.html ">專題</a> </li>
+          <li class="l4"><a href="../../school/school.html">大學生活</a> </li>
+          <li class="l5"><a href="../../practice/practice.html">工具箱</a></li>
+         </div>
+		</ul>
+		
+	</div>
+	<div class="title">
+	口罩地圖
+	</div>
+		<a href="https://www.google.com.tw/maps/place/806%E9%AB%98%E9%9B%84%E5%B8%82%E5%89%8D%E9%8E%AE%E5%8D%80%E5%BE%A9%E8%88%88%E5%9B%9B%E8%B7%AF12%E8%99%9F" target="_blank">前往店家</a>
+	<div id="map">
+		
+	</div>
+
+	<script>
+			var map = L.map('map', {
+				center: [25.03, 121.55],
+				zoom: 13
+			});
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+			var greenIcon = new L.Icon({
+			  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+			  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			  iconSize: [25, 41],
+			  iconAnchor: [12, 41],
+			  popupAnchor: [1, -34],
+			  shadowSize: [41, 41]
+			});
+			var blackIcon = new L.Icon({
+			  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png',
+			  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+			  iconSize: [25, 41],
+			  iconAnchor: [12, 41],
+			  popupAnchor: [1, -34],
+			  shadowSize: [41, 41]
+			});
+
+			//新增一個圖層放icon的組
+			var markers=new L.MarkerClusterGroup().addTo(map);
+			//在該圖層放上icon
+
+			//import data 
+			var xhr = new XMLHttpRequest();
+			//我準備要跟某伺服器，要藥局的資料
+			xhr.open("get","https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json");
+			//執行要資料的動作
+			xhr.send();
+			//資料回傳，才會觸發以下的語法
+			xhr.onload = function(){
+			  //string轉成物件陣列的json格式
+			 var data = JSON.parse(xhr.responseText).features;
+			 //用迴圈把資料給到進去
+			  for(let i =0;data.length>i;i++){
+			   var mask;
+				if (data[i].properties.mask_adult==0){mask=blackIcon;}
+				else{mask=greenIcon;}     markers.addLayer(L.marker([data[i].geometry.coordinates[1],data[i].geometry.coordinates[0]], {icon: mask}).bindPopup('<h1>'+data[i].properties.name+'</h1>'));
+			// add more markers here...
+			  // L.marker().addTo(map)
+			  //   )
+			 }
+			 map.addLayer(markers);
+			}
+	</script>
+	</body>
+	
+</html>

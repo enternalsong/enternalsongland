@@ -1,0 +1,101 @@
+.title{
+   text-align:center;
+   
+  font-family: 'Slabo 27px',serif;
+  
+}
+.nav h1{
+  font-size:20px;
+  text-align:center;
+}
+.nav{
+  background-color:#888;
+  height:40px;
+  
+}
+.nav .main{
+  height:25px;
+  width:30%;
+  
+  float:left;
+ 
+  vertical-align:middle;
+}
+.nav .menu{
+  height:25px;
+  flow:left;
+}
+
+.nav ul{
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  
+}
+.nav li{
+  display:inline-block;
+  padding:12px;
+  
+}
+li a{
+  color:black;
+  font-weight:300;
+  text-decoration:none;
+  font-size:1.1em;
+  width:18px;
+  height:18px;
+  text-align:center;
+  
+}
+
+
+.center{
+  background-color:blue;
+  
+}
+.leftdiv{
+	text-align:center;
+	height:700px;
+	background-image:url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size:cover
+}
+
+.leftdiv .self {
+	width:250px;
+	height:250px;
+	margin-top:50px;
+	
+	border-radius:125px;
+	
+}
+.leftdiv h1{
+	font-size:2em;
+	font-weight:200;
+}
+.leftdiv h2{
+	font-size:1.2em;
+	font-weight:200;
+	
+}
+
+.social-link i{
+	font-size:1.5em;
+	margin:25px;
+	margin-bottom:20px;
+	display:blockdisplay:block
+	
+	
+}
+.social-link a {
+	color:black;
+	
+	
+}
+.main a{
+	color:black;
+	text-decoration:none;
+}

@@ -1,0 +1,275 @@
+.design{
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png");
+  background-size:cover;
+  background-position:center center;
+  width:100%;
+  padding-top:64px;
+  padding-bottom:180px;
+  .container{
+    margin-bottom: 50px;
+    .title{
+      text-align: center;
+      font-size: 48px;
+      line-height: 72px;
+      color: white;
+      margin-bottom: 60px;
+    }
+
+
+    
+  }
+  .box{
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center center;
+    height: 592px;
+    width: 592px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .box-text{
+    color: red;
+    font-size: 72px;
+    line-height: 108px;
+  }
+}
+  .design-list{
+    margin-bottom: 60px;
+  }
+  .mr{
+    margin-right: 8px;
+  }
+  .mr30{
+    margin-right: 30px;
+  }
+  .mb{
+    margin-bottom: 8px;
+  }
+  .dimg{
+    max-width:100%;
+    height: auto;
+    display: block;
+  }
+  .df{
+    display: flex;
+  }
+  .dfc{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jcc{
+    justify-content: center;
+  }
+  .jcend{
+    justify-content: flex-end;
+  }
+  .pr8 {
+    padding-right: 8px;
+  }
+  .aic{
+    align-items: center;
+  }
+  .end-box{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }
+  .more-img {
+    position: relative;
+    height: 100%;
+    display: flex;
+    max-width: 30%;
+    transition: all .65s .3s;
+    transform: translateX(0px);
+    margin-right: 85px;
+  }
+  .more-img::after {
+    content: "";
+    position: absolute;
+    background: white;
+    top: 8%;
+    bottom: 8%;
+    left: 10%;
+    right: -85px;
+  }
+  .more-img span {
+    font-size: 30px;
+    color: #AA0601;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    white-space: nowrap;
+  }
+  .more-img span {
+    padding: 5px 0 5px 48px;
+  }
+  .more-img span:hover::before {
+    transform: translateY(-85px);
+    opacity: .7;
+  }
+  .twobox{
+    display: flex;
+    height:592px;
+
+    padding: 8px;
+    justify-content: center;
+    align-items:flex-start;
+    margin-bottom: 20px;
+  }
+
+  .pic1{
+    background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png");
+  }
+  .pic2{
+    background-image:url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
+
+  }
+
+@media(max-width:992px)
+{
+  .more-img {
+    margin-right: 49px;
+  }
+
+  .more-img::after {
+    right: -49px;
+  }
+  .design .box{
+    width: 342px;
+    height: 299px;
+  }
+  .box-text{
+    font-size: 32px;
+    line-height: 25px;
+  }
+}
+@media(max-width: 767px)
+{
+  .end-box{
+    justify-content: flex-start;
+  }
+
+  .more-img {
+    margin-right: 0;
+  }
+
+  .more-img::after {
+    right: 0;
+  }
+  .mr-1 {
+    margin-right: 8px;
+  }
+  
+  .design .twobox{
+    padding-right: 8px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .twobox .box{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+
+  .customerbox{
+    width:100%;
+    margin-bottom:80px;
+    margin-top: -200px;
+
+    .title{
+      color:white;
+      text-align:center;
+      font-size:48px;
+      line-height:72px;
+      padding: 10px;
+      margin-bottom: 60px;
+    }
+  } 
+  .quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .quotebox{
+    max-width:282px;
+    padding-left:12px;
+    padding-right:12px;
+  }
+  .quotepic{
+    width:100%;
+    height:256px;
+    background-size:cover;
+    background-position:center center;
+  }
+  .rec1{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png")
+  }
+  .rec2{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png")
+  }
+  .rec3{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png")
+  }
+  .rec4{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png")
+  }
+  .quotebox-inner{
+    font-size:16px;
+    line-height: 24px;
+    padding:16px;
+    border:1px solid #DEE2E6;
+  }
+  .quote-margin{
+    margin-bottom:16px;
+  }
+
+
+@media(max-width:992px){
+  .quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+  }
+  .quotebox{
+    max-width:324px;
+    height:auto;
+    padding-left:12px;
+    padding-right:12px;
+    margin-bottom:24px;
+  }
+
+
+}
+@media(max-width:767px){
+
+  .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+  }
+  .quotebox{
+    width:auto;
+    min-width:352px;
+    height:auto;
+    padding-left:12px;
+    padding-right:12px;
+    margin-bottom:16px;
+  }
+
+}
+
